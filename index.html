@@ -21,6 +21,12 @@
             }
         }
     </script>
+    <script>
+        function autoPlay() {
+            var myAuto = document.getElementById('myaudio');
+            myAuto.play();
+        }
+    </script>
 </head>
 
 <body>
@@ -31,11 +37,16 @@
                     <div class="col-sm-8 col-md-7 py-4">
                         <h4 class="text-white">About</h4>
                         <p class="text-muted">自娱自乐.</p>
+                        <audio id="myaudio" controls="controls" hidden="true">
+                            <source src="egg.mp3" type="audio/mpeg">
+                          您的浏览器不支持 audio 元素。
+                          </audio>                   
                     </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
+                    <div class="col-sm-4 offset-md-1 py-4">     
                         <h4 class="text-white">Contact</h4>
-                        <ul class="list-unstyled">
+                        <!--<ul class="list-unstyled">
                             <li><a href="#" class="text-white">Github</a></li>
+                        -->
                         </ul>
                     </div>
                 </div>
@@ -51,7 +62,8 @@
                         </path>
                         <circle cx="12" cy="13" r="4"></circle>
                     </svg>
-                    <strong>哇哈哈</strong>
+                    <input type="button" onclick="autoPlay()" class="btn btn-dark" value="哇哈哈" />
+                    <!--<strong>哇哈哈</strong>-->
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                     data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
