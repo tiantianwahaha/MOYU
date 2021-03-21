@@ -15,8 +15,6 @@
             var list = ["baidu", "zhihu", "weibo", "hupu"]
             for (var i = 0; i < list.length; i++) {
                 key = list[i]
-                console.log(data[key])
-                console.log(data[key].join(""))
                 document.getElementById(key).innerHTML = data[key].join("")
             }
         }
