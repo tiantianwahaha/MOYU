@@ -33,7 +33,7 @@ jobs:
 
     - name: Run python   # 生成新的文件 
       run: |
-       python code/baidu.py
+       python auto.py
     - name: Record time  
       run: |
         echo `date` > date.log
